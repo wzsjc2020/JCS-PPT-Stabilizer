@@ -36,7 +36,11 @@
 autoSelectAbsoluteImagePath(String imagePathFromConstant)
 ```
 
+## Release_V0.1.3（2022.2.23）
 
+1.修复了自定义解析图片工具ImageToolkit.autoSelectAbsoluteImagePath()
+2.修复了#20220223a
+3.本版本为最终版本，不再提供更新
 
 ## BUGS
 
@@ -55,3 +59,7 @@ CasinoCoreConstant.ERROR_INFO错误贴图未能正常加载
 ### #20220222b
 
 V0.1.1 长按键盘任意按键不放，随后轻点下键，获取时间间隔数据有误，导致直接播放下一页
+
+### #20220223a
+
+V0.1.2 内部类封装图片无法显示
