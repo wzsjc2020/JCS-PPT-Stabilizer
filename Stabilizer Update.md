@@ -42,6 +42,45 @@ autoSelectAbsoluteImagePath(String imagePathFromConstant)
 2.修复了#20220223a
 3.本版本为最终版本，不再提供更新
 
+## Express Edition V1.0.0 (2022.2.27)
+
+1.重新架构了程序，其实际效果与V0.1.3并没有明显区别
+2.删除了自V0.0.1版本以来的preferredSystemResolution设置，现在不再通过系统分辨率来设置画面大小
+
+```
+"preferredSystemResolution": false,			//已被移除
+```
+
+3.现在可以通过设置isHorizontal设置功能按键的竖直或横向排列
+
+```
+"functionKeys": [
+  {
+    "x": 20,							//图标初始X位置
+    "y": 50,							//图标初始Y位置
+    "width": 64,						//图标的宽度
+    "height": 64,						//图标的长度
+    "h_gap": 20,						//图标间的横向距离
+    "v_gap": 20,						//图标间的纵向距离
+    "isHorizontal": false				//是否水平排列
+  },
+```
+
+4.现在可以加强自定义图标路径，可以设置图标排列位置，以及图标是否在界面中显示
+
+```
+{
+  "keyName": "next",						//功能键名称
+  "rank": 2,								//排列顺序，如果不想显示在界面请设置为-1
+  "isShow": "true",							//是否显示
+  "imagePath": "icon/next.png"				//图标的路径
+},
+```
+
+5.修复了闪屏的问题
+
+
+
 ## BUGS
 
 ### #20220221a UN

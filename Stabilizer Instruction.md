@@ -19,7 +19,11 @@ PPT Stabilizer 是由WZSJC2022 在2022年2月19日开发的，并在2022年2月2
 
 通过options.json配置文件对文件的变量进行修改
 
-### options.json(V0.1.1-V0.1.2)
+### options.json(V1.0.0)
+
+基本与之前一致
+
+### options.json(V0.1.1-V0.1.3)
 
 {
   "imgFolderName": "inventory",				//设置图片文件夹名称，必须和%run.jar同级目录
